@@ -1,0 +1,163 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height:100vh;
+    background-color: #eaeaea;
+}
+
+.home .content h1 span,
+.home .content h3 span{
+    font-weight: 800;
+}
+
+
+header{
+    margin-top: 20px ;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #1f2a48;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: #2c3e50 ;
+    margin-left:4rem ;
+    font-weight: 500;
+    transition: 0.3 ease;
+    border-bottom:3px solid;
+}
+
+nav a:hover{
+    color:#aaa;
+    border-bottom: 3px solid ;
+    transition: 0.3s ease;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.home .content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #444444
+}
+
+.content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.photo{
+    border-radius: 50%;
+}
+
+.photo img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.photo img:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+.social-icons a{
+    font-size: xx-large;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: black;
+    margin: 1.5rem 1rem 1.5rem 1rem;
+
+   
+}
+
+.social-icons a:hover{
+    transition: 0.5s ease;
+    transform: scale(1.3) translateY(-5px);
+    color: darkblue;
+}
+
+.btn{
+    
+    font-size: x-large;
+    display: inline-block;
+    padding: 1.8r;
+    background-color:#4c5c70 ;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.btn:hover{
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    background-color:#1f2a48 ;
+}
+
+.content p{
+    font-size: 1.7rem;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
