@@ -1,0 +1,365 @@
+ *{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: #f0f5fd;
+    height: 100vh;
+}
+
+.leftsection{
+    background-color: #fff;
+    width: 170px;
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.leftsection .sidebar h2{
+    color: #364670;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.leftsection .sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.leftsection .sidebar .item,
+.leftsection .signout{
+    display: flex;
+    align-items: cemter;
+    gap: 6px;
+    color: #364670;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.leftsection .sidebar .item.active{
+    color: #1976d2;
+}
+
+.leftsection .sidebar .item.active i,
+.leftsection .sidebar .item.active h3,
+.leftsection .sidebar .item:hover,
+.leftsection .signout:hover{
+    color: #1976d2;
+}
+
+.leftsection .sidebar h3,
+.leftsection .signout h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.leftsection .sidebar i,
+.leftsection .signout i{
+    font-size: 20px;
+}
+
+.main{
+    flex: 6;
+    padding: 20px 30px;
+}
+
+.main .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .header .search{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.main .header .search button{
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+}
+
+.main .header .search i{
+    font-size: 19px;
+}
+
+.main .header .search input{
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.main .header .iconsbtns{
+    display: flex;
+    gap: 8px;
+}
+
+.main .header .iconsbtns i{
+    background-color: #1976d2;
+    padding: 8px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.main .header .iconsbtns i:hover{
+    background-color: #0d47a1;
+}
+
+.main .separator{
+    margin: 35px 0px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #364670;
+}
+
+.main .quickaccess{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.main .quickaccess .item{
+    background-color: #fff;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: transparent;
+    transition: all 0.3s ease;
+}
+
+.main .quickaccess .item:hover{
+    border: 1px solid #999;
+}
+
+.main .quickaccess .item i{
+    font-size: 45px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+.main .quickaccess .item:nth-child(1) i{
+    color: #1976d2;
+    background-color: #e6e4ec;    
+}
+
+.main .quickaccess .item:nth-child(2) i{
+    background-color: #ddeffd;
+    color: #1976d2;
+}
+
+.main .quickaccess .item:nth-child(3) i{
+    color:#ffd12c;
+    background-color:#fff8df;
+}
+
+.main .quickaccess .item:nth-child(4) i{
+    color: #3bc963;
+    background-color: #ddeffd;
+}
+
+.main .quickaccess .item h3{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.main .quickaccess .item p{
+    color: #999;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.main table{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    border-spacing: 0 8px;
+    line-height: 2.5;
+    transition: all 0.2s ease;
+}
+
+.main table tr:hover td.name,
+.main table tr:hover td.extension,
+.main table tr:hover td.size {
+    text-decoration: underline 1px black;
+    cursor: pointer;
+}
+
+.main table tbody tr:nth-child(1) .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 3px;
+    color: #1976d2;
+    background-color: #e6e4ec; 
+}
+
+.main table tbody tr:nth-child(2) .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 3px;
+    color: #1976d2;
+    background-color: #ddeffd; 
+}
+
+.main table tbody tr:nth-child(3) .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 3px;
+    color:#ffd12c;
+    background-color:#fff8df;
+}
+
+.main table tbody tr:nth-child(4) .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 3px;
+     color: #3bc963;
+    background-color: #ddeffd;
+}
+
+
+.rightsection{
+    flex: 2; 
+    padding: 20px 30px;
+}
+
+
+
+.rightsection .profile .top img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.rightsection .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.rightsection .profile .top  h4{
+    font-size: 15px;
+}
+
+.rightsection .profile .top  p{
+    color: #999;
+    font-size: 15px;
+}
+
+.rightsection .profile i{
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+} 
+
+.rightsection .uploadbtn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 15px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #1976d2;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rightsection .uploadbtn button:hover{
+    background-color: #0d47a1;
+}
+
+.rightsection .premium{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rightsection .premium .title i{
+    background-color: #1976d2;
+    padding: 15px;
+}
+
+@media screen and (max-width:960px){
+ .leftsection .sidebar .item  h3{
+    display: none;
+ }
+
+ .leftsection .sidebar{
+    width: 20px;
+ }
+
+ .leftsection .sidebar h2{
+    font-size: 16px;
+ }
+
+ .leftsection  .signout h3{
+    display: none;
+ }
+
+ .rightsection .profile{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    font-size: 14px;
+    width: 40%;
+ }
+
+ .rightsection .bot .uploadbtn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-top: 0px;
+ }
+
+ .main .header .iconsbtns i{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+ }
+}

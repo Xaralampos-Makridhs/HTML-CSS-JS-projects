@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>File Sharing App</title>
+        <!--Remix Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+        <!--Font Family-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="leftsection">
+            <div class="sidebar">
+                <h2>My Docs</h2>
+                <div class="item active">
+                    <i class="ri-apps-line"></i>
+                    <h3>Dashboard</h3>
+                </div>
+                <div class="item">
+                    <i class="ri-folder-line"></i>
+                    <h3>Your Files</h3>
+                </div>
+                <div class="item">
+                    <i class="ri-u-disk-line"></i>
+                    <h3>Your Disk</h3>
+                </div>
+                <div class="item">
+                    <i class="ri-folder-shield-line"></i>
+                    <h3>Protected</h3>
+                </div>
+                <div class="item">
+                    <i class="ri-star-line"></i>
+                    <h3>Favorites</h3>
+                </div>
+                <div class="item">
+                    <i class="ri-delete-bin-line"></i>
+                    <h3>Trash</h3>
+                </div>
+                <div class="item">
+                    <i class="ri-settings-3-line"></i>
+                    <h3>Settings</h3>
+                </div>
+            </div>
+                <div class="signout">
+                    <i class="ri-logout-box-line"></i>
+                    <h3>Sign out</h3>
+                </div>
+        </div>
+
+
+        <div class="main">
+            <div class="header">
+                <div class="search">
+                    <button><i class="ri-search-line"></i></button>
+                    <input type="text" placeholder="Search">
+                    <button><i class="ri-equalizer-line"></i></button>
+                </div>
+                <div class="iconsbtns">
+                    <i class="ri-chat-1-line"></i>
+                    <i class="ri-settings-3-line"></i>
+                    <i class="ri-menu-line" id="menubtn"></i>
+                </div>
+            </div>
+
+            <h3 class="separator">Quick Access</h3>
+            <div class="quickaccess">
+                <div class="item">
+                    <i class="ri-image-line"></i>
+                    <h3>Pictures</h3>
+                    <p>200/300 files</p>
+                </div>
+                <div class="item">
+                    <i class="ri-article-line"></i>
+                    <h3>Documents</h3>
+                    <p>150/500 files</p>
+                </div>
+                <div class="item">
+                    <i class="ri-folder-music-line"></i>
+                    <h3>Sounds</h3>
+                    <p>200/1000 files</p>
+                </div>
+                <div class="item">
+                    <i class="ri-folder-video-fill"></i>
+                    <h3>Video</h3>
+                    <p>200/500 files</p>
+                </div>
+            </div>
+            <h3 class="separator">Recent</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="icons"><i class="ri-image-line"></i></td>
+                        <td class="name">IMG_123.png</td>
+                        <td class="extension">PNG File</td>
+                        <td class="size">3.2MB</td>
+                        <td class="menu"><i class="ri-more-2-fill"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="icons"><i class="ri-article-line"></i></td>
+                        <td class="name">MyDoc.docx</td>
+                        <td class="extension">DOCX File</td>
+                        <td class="size">5.5MB</td>
+                        <td class="menu"><i class="ri-more-2-fill"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="icons"><i class="ri-folder-music-line"></i></td>
+                        <td class="name">myMusic.mp3</td>
+                        <td class="extension">MP3 File</td>
+                        <td class="size">10.2MB</td>
+                        <td class="menu"><i class="ri-more-2-fill"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="icons"><i class="ri-folder-video-fill"></i></td>
+                        <td class="name">my.mp4</td>
+                        <td class="extension">MP4 File</td>
+                        <td class="size">8.4 MB</td>
+                        <td class="menu"><i class="ri-more-2-fill"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rightsection">
+            <div class="profile">
+                <div class="top">
+                    <img src="assets/profile.jpg">
+                    <h4>Makridhs Xaralampos</h4>
+                    <p>makridhs.xaralampos@gmail.com</p>
+                </div>
+                <i class="ri-arrow-drop-down-line"></i>
+            </div>
+            <div class="bot">
+                <div class="uploadbtn">
+                <button>
+                    <p>New upload</p>
+                    <i class="ri-add-line"></i>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
