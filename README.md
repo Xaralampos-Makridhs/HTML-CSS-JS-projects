@@ -1,1 +1,5 @@
-The first assignments only contain HTML/CSS code. Later on, assignments with JavaScript code will also be uploaded. I hope my assignments will help you in your future career.Have fun!!!
+# HTML & CSS Projects Collection
+
+This repository contains a collection of small projects built with **HTML** and **CSS**. Each folder represents a standalone project and can be used for practice, showcasing techniques, or as a starting point for larger applications.
+
+Happy Coding!
