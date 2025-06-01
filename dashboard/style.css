@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+i,a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.leftsection{
+    height: 100vh;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #d5e4ff;
+    padding: 20px 36px;
+}
+
+.leftsection .logo a,
+.leftsection .logo i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.leftsection .signout i{
+    cursor: pointer;
+}
+
+.leftsection .logo a{
+    color: #0a0b5c;
+    font-weight: 700;
+}
+
+.leftsection .menulist{
+    display: flex;
+    flex-direction: column;
+}
+
+.leftsection .menulist ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.leftsection .menulist ul li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.leftsection .menulist ul li a,
+.leftsection .menulist ul li i{
+    color: #0a0b5c;
+    font-size: 20px;
+}
+
+.leftsection .signout{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.leftsection .signout i,
+.leftsection .signout a{
+    color: #920a0a;
+    font-size: 20px;
+}
+
+
+
+.main{
+    flex: 6;
+    padding: 25px;
+}
+
+.main .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .head .search{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: #d5e4ff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.main .head .search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.main .head .buttons i{
+    color: #fff;
+    padding: 8px 6px;
+    background-color: #85a8ff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.main .head .buttons i:hover{
+    background-color: #2f45ff;
+}
+
+
+
+.maincontent .separator h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c0eff;
+    margin-top: 10px;
+}
+
+.maincontent .info{
+    margin-top: 10px;
+    display: flex;
+}
+
+.maincontent .info .first{
+    font-size: 19px;
+    color: #999;
+}
+
+.maincontent .info p{
+    font-size: 19px;
+}
+
+.maincontent .info .second{
+    color: #0a0b5c;
+}
+
+.maincontent .pdf{
+    margin-top: 10px;
+}
+
+.maincontent .pdf button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 8px;
+    background-color: #85a8ff;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.maincontent .pdf button:hover{
+    background-color: #2f45ff;
+}
+
+.main .items {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.containeritem {
+  width: 180px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #efefef;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.containeritem:hover {
+  background-color: #bdbdbd;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.icon i {
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.paid .icon {
+  background-color: #5b8eff;
+}
+
+.visit .icon {
+  background-color: #ffe28a;
+}
+
+.search .icon {
+  background-color: #99f3bd;
+}
+
+.sales .icon {
+  background-color: #ffb3b3;
+}
+
+.users .icon{
+    background-color: #ffa500;
+}
+
+.notifications .icon{
+  background-color: #ff0000;  
+}
+
+.informations h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.informations p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.main .maincontent .separator{
+    margin-top: 20px;
+    color: #0c0eff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.main .maincontent .ordertable{
+    margin-top: 10px;
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 0.7;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.main .maincontent .ordertable th,
+.main .maincontent .ordertable td{
+    padding: 12px;
+    width: 33.33%;
+}
+
+.main .maincontent .ordertable th{
+    font-weight: 600;;
+}
+
+
+.main .maincontent .ordertable thead th{
+    font-size: 14px;
+    color: #0a0b5c;
+}
+
+.main .maincontent .ordertable tbody tr td p{
+    color: #10169f;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.main .maincontent .ordertable tbody tr td .completebtn{
+    padding: 5px 4px;
+    color: #fffd;
+    background-color: #00b800;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.main .maincontent .ordertable tbody tr td .processingbtn{
+    padding: 5px 4px;
+    color: #fffd;
+    background-color: #0c0eff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.main .maincontent .ordertable tbody tr td .pendingbtn{
+    padding: 5px 4px;
+    color: #fffd;
+    background-color: #d1bf00;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.main .maincontent .ordertable tbody tr td .usercell{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.main .maincontent .ordertable tbody tr td img{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+@media (max-width:768px){
+    .leftsection{
+        width: 100px;
+    }
+
+    .leftsection .logo a{
+        display: none;
+    }
+
+    .leftsection .menulist ul li a{
+        display: none;
+    }
+    
+    .leftsection .signout a{
+        display: none;
+    }
+
+}
