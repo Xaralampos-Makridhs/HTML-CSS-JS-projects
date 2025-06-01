@@ -1,0 +1,461 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+a{
+    text-decoration: none;
+    color: #1f2937;
+}
+
+img{
+    object-fit: convers;
+}
+
+.btn{
+    border: 2px solid #1f2937;
+    background: #1f2937;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn:hover{
+    color: #1f2937;
+    background-color: #fff;
+    border-color: whitesmoke;
+}
+
+.btnsecondary{
+    color: #1f2937;
+    background: #fff;
+    border: 2px solid #e5e7eb;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.btnsecondary:hover,
+.socialmedia a:hover{
+    border-color: #1f2937;
+    background:#1f2937;
+    color: #fff;   
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px; /*  vertical horizontal */
+}
+
+.navbarlogo{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+}
+
+.navbarlogo i{
+    font-size: 30px;
+}
+
+.navbarmenu{
+    display: flex;
+    gap: 20px;
+}
+
+
+.navbarlink{
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.navbarlink:hover{
+    color: #000;
+}
+
+.navbaraction{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbarlocation h5{
+    font-weight: 500;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.navbarlocation p{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.navbaraction,
+.btn{
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.photo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    gap: 60px;
+    height: calc(100vh-98px);
+}
+
+.photocontent,
+.intro{
+    width: 50%;
+}
+
+.image{
+    width: 200;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.photocontent h2{
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.intro{
+    padding-right: 40px;
+}
+
+.intro h3{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.intro p{
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.action{
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    right: 30px;
+    top: 25%;
+}
+
+.socialmedia a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 2px solid #e5e7eb;
+    padding: 3px;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.skills{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.skillsdescreption,
+.skillstats{
+    width: 50%;
+}
+
+.skillsdescreption{
+    padding-right: 80px;
+}
+
+.skillsdescreption h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.skillsdescreption p{
+    color: #6b7280;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.skillstats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.skillstats i{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.skillsinfo{
+    background:#e5e7eb ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.skillsinfo h5{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.skillsinfo p{
+    width: 50%;
+    text-align: center;
+    font-weight: 500;
+    color: #7a7a7a;
+}
+
+
+.showcase{
+    padding:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* Τρεις κάρτες ανά σειρά */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.codeimage img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.carddescription {
+    margin-top: 10px;
+    color: #6b7280;
+}
+
+.carddescription h4 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.carddescription p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .navbarmenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbarlocation {
+        font-size: 12px;
+    }
+
+    .photo {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .photocontent {
+        width: 100%;
+    }
+
+    .image {
+        width: 120px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .intro {
+        padding: 0;
+        width: 100%;
+    }
+
+    .intro h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .intro p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    .socialmedia {
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .skills {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .skillsdescreption,
+    .skillstats {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .skillstats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .skillstats i {
+        font-size: 40px;
+        padding: 10px 0;
+    }
+
+    .skillsinfo {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .showcase {
+        padding: 20px;
+    }
+
+    .cardcontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .codeimage {
+        position: relative;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .codeimage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .codeimage:hover img {
+        transform: scale(1.1);
+    }
+
+    .carddescription {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .carddescription h4 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .carddescription p {
+        font-size: 14px;
+        color: #6b7280;
+    }
+
+   
+
+   .action {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px; 
+        margin: 0 auto;   
+        padding: 12px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .btnsecondary {
+        background-color: #fff;
+        color: #1f2937;
+        border: 2px solid #e5e7eb;
+    }
+
+    .btnsecondary:hover {
+        background-color: #1f2937;
+        color: #fff;
+    }
+}
+
