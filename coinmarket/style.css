@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li{
+    list-style-type: none;
+}
+.heading .logo i,
+.heading .logo p{
+    color: #fff;
+}
+
+.heading .search i{
+    color: #fff;
+}
+
+.heading .links ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+body{
+    background-color: #0f0f23;
+    height: 100vh;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #999;
+    height: 90px;
+}
+
+.heading .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.heading .logo i{
+    font-size: 20px;
+}
+
+.heading .logo p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.heading .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: cetner;
+    gap: 8px;
+}
+
+.heading .links ul li a{
+    transition: all 0.5s ease;
+}
+
+.heading .links ul li a:hover{
+    color: #cbd7fa;
+}
+
+.heading .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.heading .buttons button{
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.heading .buttons button i,
+.heading .buttons button p{
+    color: #fff;
+}
+
+.heading .buttons button:hover{
+    background-color: #3d3d3d;
+}
+
+.heading .search{
+    display: flex;
+    gap: 8px;
+    background-color: #3d3d3d;
+    border-radius: 8px;
+    padding: 8px;
+    width: 250px;
+}
+
+.heading .search input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.heading .search input::placeholder{
+    color: #fff;
+}
+
+.heading .addbtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.heading .addbtns button{
+    padding: 8px;
+    background-color: #3d3d3d;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+ .heading .addbtns  .log{
+    background-color: #0609cd;
+    transition: all 0.5s ease;
+}
+ .heading .addbtns .log p{
+    color: #fff;
+}
+
+
+ .heading .addbtns button i{
+    font-size: 19px;
+    color: #fff;
+}
+
+ .heading .addbtns .log:hover{
+    background-color: #85a8ff;
+}
+
+main{
+    margin-top: 10px;
+}
+
+
+main .header .infos ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 19px;
+    list-style-type: none;
+    padding: 0 43px;
+}
+
+main .header .infos ul li p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 4px;
+}
+
+main .header .infos ul li p span{
+    color: #437bfc;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+main .header .infos ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main{
+    padding: 0 43px;
+    margin-top: 10px;
+}
+
+main .main{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+main .main .trendingcoins{
+    margin-top: 10px;
+    background-color: transparent;
+    padding: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    flex: 1;
+    border: 1px solid  #fff;
+}
+
+main .main .trendingcoins .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+main .main .trendingcoins .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #898ecb;
+    padding: 9px;
+    gap: 10px;
+}
+
+main .main .trendingcoins .icons .icon{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #605fa3;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+main .main .trendingcoins .icons .icon:hover{
+    background-color: #0f0f23;
+}
+
+
+main .main .trendingcoins .title p{
+    font-weight: 700;
+    font-size: 19px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .main .listcoins{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+main .main .listcoins .coin .info{
+    display: flex;
+    align-items: center;
+    justify-content: cetner;
+    gap: 5px;
+}
+
+main .main .listcoins .coin{
+    margin-top: 9px;
+    padding: 8px;
+    background-color: #898ecb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+main .main .listcoins .coin .info h4{
+    color: #0a0b5c;
+}
+
+main .main .listcoins .coin .progress{
+    display: flex;
+    align-items: center;
+}
+
+main .main .listcoins .coin .progress.up{
+    font-weight: 700;
+    color: #076d08;
+}
+
+main .main .listcoins .coin .progress.low{
+    font-weight: 700;
+    color: #b10303;
+}
+
+main .main .listcoins .coin .info p{
+    color: #262626;
+}
+
+
+main .lastnav{
+    margin-top: 20px;
+    padding: 0px 43px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main .lastnav ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .lastnav .lastbtns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #262626;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+main .lastnav .lastbtns button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px;
+    background-color: #4f4f4f;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+main .lastnav .lastbtns button:hover{
+    background-color: #000;
+}
+
+main .lastnav .topbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0b5c;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+main .lastnav .topbtn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #2f45ff;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+}
+
+main .lastnav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .lastnav ul li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .lastnav ul li:nth-child(1) button i{
+    color: #e27c00;
+    
+}
+
+main .lastnav ul li:nth-child(2) button i{
+    color: #800080;   
+}
+
+
+main .lastnav ul li:nth-child(3) button i{
+    color: #0b5c0d;
+
+}
+
+main .lastnav ul li:nth-child(4) button i{
+    color: #00b2b7;
+}
