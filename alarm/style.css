@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    behavior: smooth;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e8f1ff;
+}
+
+#clock{
+    background-color: #b3ccff;
+    padding: 10px 15px;
+    color: #0a0b5c;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.5s ease;
+}
+
+#clock:hover{
+    background-color: #0a0b5c;
+    color: #85a8ff;
+}
+
+h4{
+    font-weight: 500;
+    color: #0a0b5c;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.initialize button{
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #85a8ff;
+    color: #0a0b5c;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-right: 10px;
+}
+
+.initialize button:hover{
+    background-color: #0a0b5c;
+    color: #b3ccff;
+}
+
+select{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;  
+    background-color: transparent;
+    border: 1px solid #0a0b5c;
+    outline: none;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: #d5e4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
