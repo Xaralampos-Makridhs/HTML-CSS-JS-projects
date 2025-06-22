@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-color: #000;
+}
+
+.leftsection {
+  padding: 4px;
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.server-icons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 10px;
+}
+
+.server-icons .icon,
+.server-icons .icon.active {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.server-icons .icon {
+  background-color: #3d3d3d;
+  transition: all 0.5s ease;
+}
+
+.server-icons .icon:hover:not(.active) {
+  background-color: #262626;
+}
+
+.server-icons .icon.active {
+  background-color: #5865f2;
+}
+
+.server-icons i {
+  color: #fff;
+}
+
+hr {
+  width: 30px;
+  margin-bottom: 5px;
+  margin-left: 4px;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #262626;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.action .left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.action .left i {
+  background-color: #5865f2;
+  padding: 5px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.action .left .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action .left .name h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.action .left .name p {
+  font-size: 10px;
+  color: #00b800;
+}
+
+.action .right {
+  display: flex;
+  gap: 5px;
+}
+
+.action .right .buttons {
+  padding: 5px;
+  background-color: #3d3d3d;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.action .right .buttons:hover {
+  background-color: #000;
+}
+
+.action .right .buttons i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.chat {
+  flex: 1;
+}
+
+.chat .header {
+  margin: 10px 0;
+  padding: 10px;
+  width: 200px;
+  background-color: #4f4f4f;
+  border: 1px solid #f6f6f6;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.chat .header:hover {
+  background-color: #454545;
+}
+
+.sep,
+.sep1 {
+  width: 200px;
+}
+
+.chat .middle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chat .middle .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #3d3d3d;
+  border-radius: 10px;
+  padding: 10px;
+  width: 180px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.chat .middle .info:hover {
+  background-color: #262626;
+}
+
+.chat .messages .top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #808080;
+}
+
+.chat .messages .maincontent .message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+  padding: 8px 10px;
+  background-color: #262626;
+  border-radius: 10px;
+}
+
+.chat .messages .message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.chat .messages .message:hover {
+  background-color: #5d5d5d;
+}
+
+.chat .messages .message img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.general-chat {
+  padding: 10px 15px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.general-chat .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.general-chat .items {
+  display: flex;
+  gap: 30px;
+}
+
+.general-chat .item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #efefef;
+}
+
+.general-chat .items .item:nth-child(2) {
+  background-color: #262626;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.general-chat .items .item:nth-child(2):hover {
+  background-color: #4f4f4f;
+}
+
+.general-chat .items .item:nth-child(4) {
+  padding: 6px;
+  background-color: #5865f2;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.general-chat .items .item:nth-child(4):hover {
+  background-color: #8093f9;
+}
+
+.general-chat .btn {
+  color: #fff;
+}
+
+.general-chat .search {
+  margin-top: 10px;
+  padding: 10px 15px;
+  display: flex;
+  gap: 20px;
+  background-color: #3d3d3d;
+  border-radius: 15px;
+  width: 50%;
+}
+
+.general-chat .search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+}
+
+.general-chat .mainleftcontent {
+  padding: 15px 20px;
+}
+
+.general-chat .mainleftcontent p {
+  color: #fff;
+}
+
+.general-chat .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.general-chat .informations {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.general-chat .informations img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.general-chat .informations h1 {
+  color: #fff;
+  font-size: 16px;
+}
+
+.general-chat .buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.general-chat .button {
+  padding: 5px;
+  background-color: #3d3d3d;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.general-chat .button:hover {
+  background-color: #000;
+}
+
+.general-chat .button i {
+  color: #fff;
+  font-size: 16px;
+}
