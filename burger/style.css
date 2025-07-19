@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bun-color: #f5c16c;
+  --tomato-color: #e63946;
+  --lettuce-color: #8bc34a;
+  --burger-color: #993300;
+  --mayo-color: #fceeb5;
+  --mustard-color: #ffd000;
+  --seed-color: #fff9e3;
+  --cheddar-color: #f4a300;
+}
+
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #faf0e6;
+}
+
+.burger{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.burger .topbun{
+  position: relative;
+  background-color: var(--bun-color);
+  width: 200px;
+  height: 70px;
+  border-radius: 100px 100px 50px 50px;
+}
+
+.burger .topbun .seed{
+  position: absolute;
+  width: 6px;
+  height: 8px;
+  border-radius: 70%/30%;
+  background-color: var(--seed-color);
+}
+
+.burger .topbun .seed:nth-child(1){
+  left: 40px;
+  top: 20px;
+  transform: rotate(60deg);
+}
+
+.burger .topbun .seed:nth-child(2){
+  bottom: 20px;
+  left: 40px;
+  transform: rotate(30deg);
+}
+
+.burger .topbun .seed:nth-child(3){
+  top: 40px;
+  left: 90px;
+  transform: rotate(32deg);
+}
+
+.burger .topbun .seed:nth-child(4){
+  top: 0;
+  left: 90px;
+  transform: rotate(45deg);
+}
+
+.burger .topbun .seed:nth-child(5){
+  top: 0;
+  right: 70px;
+  transform: rotate(76deg);
+}
+
+.burger .topbun .seed:nth-child(6){
+  top: 30px;
+  right: 30px;
+  transform: rotate(21deg);
+}
+
+.burger .mayo{
+  width: 150px;
+  margin: -10px auto;
+  height: 9px;
+  background-color: var(--mayo-color);
+  border-radius: 50% 30% 20% / 20% 40%;
+}
+
+.burger .lettuce{
+  background-color: var(--lettuce-color);
+  width: 205px;
+  height: 12px;
+  margin: 5px auto;
+  border-radius: 20% 30%/40% 50%;
+}
+
+.burger .tomato{
+  background-color: var(--tomato-color);
+  width: 170px;
+  height: 10px;
+  margin: -8px auto;
+  border-radius: 10px 10px;
+}
+
+.burger .cheddar{
+  width: 190px;
+  height: 7px;
+  background-color: var(--cheddar-color);
+  border-radius: 30% 30% 0% 0% / 30% 30% 30% 30%;
+
+
+  margin: 7px auto;
+}
+
+.burger .meat{
+  width: 210px;
+  height: 18px;
+  background-color: var(--burger-color);
+  border-radius: 10px 10px;
+  margin: -8px auto;
+}
+
+.burger .mustard{
+  background-color: var(--mustard-color);
+  width: 150px;
+  margin: 8px auto;
+  height: 8px;
+  background-color: var(--mustard-color);
+  border-radius: 0% 0% 30% 30% / 30% 30% 30% 30%;
+}
+
+.burger .botbun{
+  width: 200px;
+  height: 40px;
+  background-color: var(--bun-color);
+  border-radius: 60px 60px 100px 100px;
+  margin: -10px auto;
+}
+
+.burger > div{
+  opacity: 0;
+  transform: translateX(30px);
+  animation: righttomid 0.8s forwards;
+}
+
+.burger > div:nth-child(1) { animation-delay: 0s; }
+.burger > div:nth-child(2) { animation-delay: 0.3s; }
+.burger > div:nth-child(3) { animation-delay: 0.6s; }
+.burger > div:nth-child(4) { animation-delay: 0.9s; }
+.burger > div:nth-child(5) { animation-delay: 0.12s; }
+.burger > div:nth-child(6) { animation-delay: 1s; }
+.burger > div:nth-child(7) { animation-delay: 1.3s; }
+.burger > div:nth-child(8) { animation-delay: 1.6s; }
+
+
+@keyframes righttomid {
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
