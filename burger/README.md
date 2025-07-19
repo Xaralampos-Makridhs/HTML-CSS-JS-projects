@@ -8,4 +8,4 @@
 https://github.com/user-attachments/assets/c882f3ec-6104-4c4d-afe1-b18f4618c528
 
 ## Note
-If you are on a diet, don't save this project!!
+If you are on a **diet**, don't save this project, else **Bon appetit**!
