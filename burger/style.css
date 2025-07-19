@@ -1,116 +1,166 @@
-
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --bun-color: #f5c16c;
+  --tomato-color: #e63946;
+  --lettuce-color: #8bc34a;
+  --burger-color: #993300;
+  --mayo-color: #fceeb5;
+  --mustard-color: #ffd000;
+  --seed-color: #fff9e3;
+  --cheddar-color: #f4a300;
+}
+
 
 body{
-    background: #f8f1e4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #faf0e6;
 }
 
-.burgercontent{
-    width: 200px;
-    position: relative;
+.burger{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.bread{
-    position: relative;
-    background-color: #d9903f;
-    border-radius: 100px 100px 60px 60px;
-    width: 200px;
-    height: 80px;
+.burger .topbun{
+  position: relative;
+  background-color: var(--bun-color);
+  width: 200px;
+  height: 70px;
+  border-radius: 100px 100px 50px 50px;
 }
 
-
-.seed{
-    width: 12px;
-    height: 5px;
-    background-color: #f7f0b2;
-    border-radius: 20%/50%;
-    position: absolute;
+.burger .topbun .seed{
+  position: absolute;
+  width: 8px;
+  height: 10px;
+  border-radius: 50%/20%;
+  background-color: var(--seed-color);
 }
 
-.seed:nth-child(1){
-    top: 30px;
-    left: 80px;
-    transform: rotate(38deg);
+.burger .topbun .seed:nth-child(1){
+  left: 40px;
+  top: 20px;
+  transform: rotate(60deg);
 }
 
-.seed:nth-child(2){
-    top: 10px;
-    left: 50px;
-    transform: rotate(20deg);
-}
-.seed:nth-child(3){
-    top: 60px;
-    left: 100px;
-    transform: rotate(40deg);
-}
-.seed:nth-child(4){
-    top: 40px;
-    left: 180px;
-    transform: rotate(122deg);
+.burger .topbun .seed:nth-child(2){
+  bottom: 20px;
+  left: 40px;
+  transform: rotate(30deg);
 }
 
-.seed:nth-child(5){
-    top: 60px;
-    right: 40px;
-    transform: rotate(20deg);
+.burger .topbun .seed:nth-child(3){
+  top: 40px;
+  left: 90px;
+  transform: rotate(32deg);
 }
 
-.seed:nth-child(6){
-    bottom: 20px;
-    left: 20px;
-    transform: rotate(60deg);
+.burger .topbun .seed:nth-child(4){
+  top: 0;
+  left: 90px;
+  transform: rotate(45deg);
 }
 
-.seed:nth-child(7){
-    top: 15px;
-    left: 150px;
-    transform: rotate(30deg);
+.burger .topbun .seed:nth-child(5){
+  top: 0;
+  right: 70px;
+  transform: rotate(76deg);
 }
 
-.tomato{
-    width: 170px;
-    height: 10px;
-    background-color: #ff0000;
-    border-radius: 30px;
-    margin: 5px auto 0;
+.burger .topbun .seed:nth-child(6){
+  top: 30px;
+  right: 30px;
+  transform: rotate(21deg);
 }
 
-.cheddar{
-    width: 160px;
-    height: 10px;
-    margin: 5px auto 0;
-    border-radius: 15px;
-    background-color: #f7d144;
+.burger .mayo{
+  width: 150px;
+  margin: -10px auto;
+  height: 9px;
+  background-color: var(--mayo-color);
+  border-radius: 50% 30% 20% / 20% 40%;
 }
 
-.patty{
-    width: 210px;
-    height: 20px;
-    border-radius: 30px;
-    background-color: #a52a2a;
-    margin: 5px auto 0;
+.burger .lettuce{
+  background-color: var(--lettuce-color);
+  width: 205px;
+  height: 12px;
+  margin: 5px auto;
+  border-radius: 20% 30%/40% 50%;
 }
 
-.lettuce{
-    width: 180px;
-    height: 10px;
-    background-color: #3c9d34;
-    border-radius: 10px;
-    margin: 5px auto 0;
+.burger .tomato{
+  background-color: var(--tomato-color);
+  width: 170px;
+  height: 10px;
+  margin: -8px auto;
+  border-radius: 10px 10px;
 }
 
-.bread-bottom{
-    width: 200px;
-    height: 40px;
-    background-color: #d9903f;
-    border-radius: 60px 60px 100px 100px;
-    margin: 5px auto 0;
+.burger .cheddar{
+  width: 190px;
+  height: 7px;
+  background-color: var(--cheddar-color);
+  border-radius: 30% 30% 0% 0% / 30% 30% 30% 30%;
+
+
+  margin: 7px auto;
+}
+
+.burger .meat{
+  width: 210px;
+  height: 18px;
+  background-color: var(--burger-color);
+  border-radius: 10px 10px;
+  margin: -8px auto;
+}
+
+.burger .mustard{
+  background-color: var(--mustard-color);
+  width: 150px;
+  margin: 8px auto;
+  height: 8px;
+  background-color: var(--mustard-color);
+  border-radius: 0% 0% 30% 30% / 30% 30% 30% 30%;
+}
+
+.burger .botbun{
+  width: 200px;
+  height: 40px;
+  background-color: var(--bun-color);
+  border-radius: 60px 60px 100px 100px;
+  margin: -10px auto;
+}
+
+.burger > div{
+  opacity: 0;
+  transform: translateX(30px);
+  animation: righttomid 0.5s forwards;
+}
+
+.burger > div:nth-child(1) { animation-delay: 0s; }
+.burger > div:nth-child(2) { animation-delay: 0.2s; }
+.burger > div:nth-child(3) { animation-delay: 0.4s; }
+.burger > div:nth-child(4) { animation-delay: 0.6s; }
+.burger > div:nth-child(5) { animation-delay: 0.8s; }
+.burger > div:nth-child(6) { animation-delay: 1s; }
+.burger > div:nth-child(7) { animation-delay: 1.2s; }
+.burger > div:nth-child(8) { animation-delay: 1.4s; }
+
+
+@keyframes righttomid {
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
