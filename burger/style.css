@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f8f1e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.burgercontent{
+    width: 200px;
+    position: relative;
+}
+
+.bread{
+    position: relative;
+    background-color: #d9903f;
+    border-radius: 100px 100px 60px 60px;
+    width: 200px;
+    height: 80px;
+}
+
+
+.seed{
+    width: 12px;
+    height: 5px;
+    background-color: #f7f0b2;
+    border-radius: 20%/50%;
+    position: absolute;
+}
+
+.seed:nth-child(1){
+    top: 30px;
+    left: 80px;
+    transform: rotate(38deg);
+}
+
+.seed:nth-child(2){
+    top: 10px;
+    left: 50px;
+    transform: rotate(20deg);
+}
+.seed:nth-child(3){
+    top: 60px;
+    left: 100px;
+    transform: rotate(40deg);
+}
+.seed:nth-child(4){
+    top: 40px;
+    left: 180px;
+    transform: rotate(122deg);
+}
+
+.seed:nth-child(5){
+    top: 60px;
+    right: 40px;
+    transform: rotate(20deg);
+}
+
+.seed:nth-child(6){
+    bottom: 20px;
+    left: 20px;
+    transform: rotate(60deg);
+}
+
+.seed:nth-child(7){
+    top: 15px;
+    left: 150px;
+    transform: rotate(30deg);
+}
+
+.tomato{
+    width: 170px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 30px;
+    margin: 5px auto 0;
+}
+
+.cheddar{
+    width: 160px;
+    height: 10px;
+    margin: 5px auto 0;
+    border-radius: 15px;
+    background-color: #f7d144;
+}
+
+.patty{
+    width: 210px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #a52a2a;
+    margin: 5px auto 0;
+}
+
+.lettuce{
+    width: 180px;
+    height: 10px;
+    background-color: #3c9d34;
+    border-radius: 10px;
+    margin: 5px auto 0;
+}
+
+.bread-bottom{
+    width: 200px;
+    height: 40px;
+    background-color: #d9903f;
+    border-radius: 60px 60px 100px 100px;
+    margin: 5px auto 0;
+}
