@@ -22,4 +22,8 @@ This project focuses on the artist **LEX** and the album **2xxx**. The album fea
 Artist: **LEX**  
 Album: **2xxx**
 
+https://github.com/user-attachments/assets/93c3f934-ff74-4a71-abe4-b4d03d995999
+
+
+
 ## TGK until death, or at least until old age.
