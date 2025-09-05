@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MP3 Player</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="player">
+    <img id="cover" src="cover.png" alt="Cover Image">
+    <h2 id="title">Song Title</h2>
+    
+    <div id="progress-container" class="progress-container">
+        <div id="progress" class="progress-bar"></div>
+    </div>
+    <div class="time">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+    </div>
+
+    <div class="controls">
+        <button id="prev"><i class="ri-skip-left-line"></i></button>
+        <button id="play"><i class="ri-play-line"></i></button>
+        <button id="next"><i class="ri-skip-right-line"></i></button>
+    </div>
+
+    <audio id="audio"></audio>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
